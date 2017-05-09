@@ -115,7 +115,8 @@ class Calculator {
             computedValue = computedValue! + Double(providedValue)!
         } else if operation == Operation.subtraction {
             computedValue = computedValue! - Double(providedValue)!
-        }
+        }else if operation == Operation.plusMinus { if computedValue != nil { computedValue = computedValue !*(-1) } else {computedValue = 0 }
+        } else if operation == Operation.percentage {
         
         // The operation selected has been performed, so get ready to receive new operation
         // and new value
