@@ -107,6 +107,12 @@ class ViewController: UIViewController {
         model.sub()
     }
     
+    @IBAction func plusMinus(_ sender: Any) {
+        model.plusMinus()
+    }
     
+    @IBAction func percentage(_ sender: Any) {
+        model.percentage()
+    }
 }
 
