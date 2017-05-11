@@ -107,12 +107,18 @@ class ViewController: UIViewController {
         model.sub()
     }
     
-    @IBAction func plusMinus(_ sender: Any) {
-        model.plusMinus()
-    }
-    
     @IBAction func percentage(_ sender: Any) {
         model.percentage()
+        equals("")
+    }
+    
+    @IBAction func plusMinus(_ sender: Any) {
+        model.plusMinus ()
+        equals("")
+    }
+    @IBAction func decimalPressed(_ sender: Any) {
+        model.addToNewValue(digit: ".")
+        LabelDisplay.text = model.providedValue
     }
 }
 
